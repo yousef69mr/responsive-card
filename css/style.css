@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --white-color: aliceblue;
+  --darkblue-color: dodgerblue;
+  --dark-color: #000;
+  --grey-color: rgba(240, 248, 255, 0.7);
+}
+
+.title {
+  text-align: center;
+  width: 100%;
+}
+
+.title h1 {
+  text-transform: capitalize;
+}
+
+.service .image {
+  overflow: hidden;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.service .image img {
+  max-width: 100%;
+  height: auto;
+  transition-duration: 0.6s;
+}
+
+.service a {
+  text-decoration: none;
+}
+
+.details {
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  border-radius: 8px;
+  padding: 20px;
+  position: relative;
+  transform: translateY(-70px);
+  transition-duration: 1s;
+  background-color: var(--grey-color);
+}
+
+.details .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  transform: translateY(-70px);
+  margin: auto;
+  background-color: var(--darkblue-color);
+  color: var(--white-color);
+  outline: 5px solid var(--white-color);
+}
+
+.details .icon {
+  font-size: 40pt;
+  color: var(--white-color);
+  transition-duration: 0.6s;
+}
+
+.details h4 {
+  color: var(--dark-color);
+  text-transform: capitalize;
+  transition-duration: 0.6s;
+}
+
+.details p {
+  word-break: keep-all;
+  color: var(--dark-color);
+}
+
+.service:hover .image img {
+  transform: scale(1.3);
+}
+
+.service:hover .details h4 {
+  color: var(--darkblue-color);
+}
+
+.service:hover .details .icon {
+  background-color: var(--white-color);
+  outline: 5px solid var(--darkblue-color);
+  color: var(--darkblue-color);
+}
+
+.position-relative {
+  position: relative !important;
+}
